@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">My Application1</string>
+    <string name="teamName">Team A</string>
+    <string name="s_out">0</string>
+    <string name="btn_1">+1 points</string>
+    <string name="btn_2">+2 points</string>
+    <string name="btn_3">+3 points</string>
+</resources>
