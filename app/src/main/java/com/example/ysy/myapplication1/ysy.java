@@ -18,6 +18,26 @@ public class ysy extends AppCompatActivity {
         score = (TextView) findViewById(R.id.score);
         score2 = (TextView) findViewById(R.id.score2);
     }
+    @Override
+    protected void onSaveInstanceState(Bundle outState){
+        super.onSaveInstanceState(outState);
+        String scorea = ((TextView) findViewById(R.id.score)).getText().toString();
+        String scoreb = ((TextView) findViewById(R.id.score2)).getText().toString();
+        Log.i(TAG, "onSaveInstanceState: ");
+        outState.putString("teama_score",scorea);
+        outState.putString("teamb_score",scoreb);
+        
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        String scorea = savedInstanceState.getString("teama_score");
+        String scoreb = savedInstanceState.getString("teamb_score");
+        Log.i(TAG, "onRestoreInstanceState: d");
+        ((TextView) findViewById(R.id.score)).setText(scorea);
+        ((TextView) findViewById(R.id.score2)).setText(scoreb);
+    }
 
     public void btnAdd1(View btn) {
         if(btn.getId()==R.id.btn1){
