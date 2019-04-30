@@ -23,7 +23,7 @@ public class ysy extends AppCompatActivity {
         super.onSaveInstanceState(outState);
         String scorea = ((TextView) findViewById(R.id.score)).getText().toString();
         String scoreb = ((TextView) findViewById(R.id.score2)).getText().toString();
-        Log.i(TAG, "onSaveInstanceState: ");
+        //Log.i(TAG, "onSaveInstanceState: ");
         outState.putString("teama_score",scorea);
         outState.putString("teamb_score",scoreb);
         
@@ -34,7 +34,7 @@ public class ysy extends AppCompatActivity {
         super.onRestoreInstanceState(savedInstanceState);
         String scorea = savedInstanceState.getString("teama_score");
         String scoreb = savedInstanceState.getString("teamb_score");
-        Log.i(TAG, "onRestoreInstanceState: d");
+        //Log.i(TAG, "onRestoreInstanceState: d");
         ((TextView) findViewById(R.id.score)).setText(scorea);
         ((TextView) findViewById(R.id.score2)).setText(scoreb);
     }
