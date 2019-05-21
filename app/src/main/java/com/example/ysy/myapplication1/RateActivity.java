@@ -167,6 +167,18 @@ public class RateActivity extends AppCompatActivity implements Runnable {
             Intent list = new Intent(this,MyList2Activity.class);
             startActivity(list);
             //startActivityForResult(list,1);
+            //测试数据库
+            /*RateItem item1 = new RateItem("aaa","123");
+            RateManager manager = new RateManager(this);
+            manager.add(item1);
+            manager.add(new RateItem("bbb","23.5"));
+            Log.i(TAG, "onOptionsItemSelected: 写入数据完毕");
+
+            //查询所有数据
+            List<RateItem> testList = manager.listAll();
+            for(RateItem i : testList){
+                Log.i(TAG, "onOptionsItemSelected: 取出数据[id=" +i.getId()+"]Name="+i.getCurName()+"Rate="+i.getCurRate());
+            }*/
         }
         return true;
     }

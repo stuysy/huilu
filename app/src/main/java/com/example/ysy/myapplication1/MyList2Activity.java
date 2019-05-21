@@ -52,7 +52,6 @@ public class MyList2Activity extends ListActivity implements Runnable,AdapterVie
                         R.layout.list_item,// listItem的XML布局实现
                         new String[]{"ItemTitle","ItemDetail"},
                         new int[] {R.id.itemTitle,R.id.itemDetail}
-
                 );
                     setListAdapter(listItemAdapter);
                 }
