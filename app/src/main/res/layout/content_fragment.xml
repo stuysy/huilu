@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FrameActivity"
+    tools:showIn="@layout/activity_fragment">
+
+    <fragment
+        android:id="@+id/fragment_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.ysy.myapplication1.HomeFragment"
+        android:layout_weight="10"
+        />
+
+    <fragment
+        android:id="@+id/fragment_func"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.ysy.myapplication1.FuncFragment"
+        android:layout_weight="10"
+        />
+
+    <fragment
+        android:id="@+id/fragment_setting"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:name="com.example.ysy.myapplication1.SettingFragment"
+        android:layout_weight="10"
+        />
+
+    <RadioGroup
+        android:id="@+id/bottomGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:orientation="horizontal"
+        >
+        <RadioButton
+            android:id="@+id/radioHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rdo_home_label"
+            style="@style/rg_btn_style"
+            android:drawableTop="@drawable/home"/>
+        <RadioButton
+            android:id="@+id/radioFunc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rdo_func_label"
+            style="@style/rg_btn_style"
+            android:drawableTop="@drawable/func"/>
+        <RadioButton
+            android:id="@+id/radioSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rdo_setting_label"
+            style="@style/rg_btn_style"
+            android:drawableTop="@drawable/setting"/>
+
+    </RadioGroup>
+
+</LinearLayout>

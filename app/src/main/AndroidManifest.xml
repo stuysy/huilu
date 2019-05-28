@@ -23,7 +23,13 @@
         <activity android:name=".RateListActivity" />
         <activity android:name=".MyListActivity" />
         <activity android:name=".MyList2Activity" />
-        <activity android:name=".RateCalcActivity" android:theme="@style/Base.Theme.AppCompat.Light.Dialog"></activity>
+        <activity
+            android:name=".RateCalcActivity"
+            android:theme="@style/Base.Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name=".FrameActivity"
+            android:label="@string/title_activity_fragment"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
